@@ -1,0 +1,9 @@
+safe: true
+pygments: true
+lsi: false
+markdown: redcarpet
+exclude:
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
