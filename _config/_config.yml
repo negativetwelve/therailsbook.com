@@ -1,4 +1,3 @@
-safe: true
 destination: _deploy
 pygments: true
 lsi: false
