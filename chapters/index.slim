@@ -1,0 +1,26 @@
+---
+layout: default
+title: Chapters
+---
+
+article.content-block
+  h5.sidebar-title Chapters
+  ol.navigation.chapters-list
+    | {% for chapter in site.chapters %}
+    |   {% capture url %}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
+    |   {% capture index_url %}{{ url }}/index.html{% endcapture %}
+    li.chapter
+      h4
+        a.chapter-title href="{{ url }}"
+          | {{ chapter }}
+      ul.pseudo-list.recipes-list
+        | {% for page in site.pages %}
+        |    {% if page.url contains url %}
+        |      {% unless page.url == index_url %}
+        li.list-item.recipe
+          a.recipe-title href="{{ page.url | replace: '.html', '' }}"
+            | {{ page.title }}
+        |      {% endunless %}
+        |    {% endif %}
+        |  {% endfor %}
+    | {% endfor %}
