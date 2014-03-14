@@ -6,4 +6,5 @@ group :development do
 
   gem "foreman",  "~> 0.63"
   gem "serve",    "~> 1.5"
+  gem "jekyll-slim"
 end
