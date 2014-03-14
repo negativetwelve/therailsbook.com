@@ -9,6 +9,8 @@ html
     link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"
     link rel="stylesheet" type="text/css" href="/css/style.css"
 
+    | {% convert analytics.slim %}
+
   body
     section.container
       header.header
@@ -42,3 +44,24 @@ html
               a.nav-link href="/contributing"
                 span.entypo 6
                 | Contribute
+            li
+              a.nav-link href="/authors"
+                span.entypo ,
+                | Authors
+            li
+              a.nav-link href="/license"
+                span.entypo &copy;
+                | License
+
+      section.sidebar-block
+        h5.sidebar-title Chapters Index
+        ol.navigation.chapters-list
+          | {% for chapter in site.chapters %}
+          |   {% capture url %}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
+          |   {% capture index_url %}{{ url }}/index.html{% endcapture %}
+          li.chapter
+            div class=["sidebar-subtitle"]
+              strong
+                a.chapter-title href="{{ url }}"
+                  | {{ chapter }}
+          | {% endfor %}
