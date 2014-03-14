@@ -1,0 +1,44 @@
+doctype html
+
+html
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    title The Rails Book &raquo; {{ page.title }}
+    link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"
+    link rel="stylesheet" type="text/css" href="/css/style.css"
+
+  body
+    section.container
+      header.header
+        h1
+          a href="/"
+            span.entypo &oacute;
+            span.title.ir The Rails Book
+
+      section.content
+        article.content-block
+          | {{ content }}
+
+        footer.footer.content-block
+          p
+            | some text goes here
+
+    aside#sidebar
+      section.sidebar-block.block-short
+        nav.navigation.pages-nav.home-nav
+          h6
+            a.nav-link href="/"
+              span.entypo &oacute;
+              | The Rails Book
+          small.thin.dimmed
+            | (last updated {{ site.time | date: "%d %B, %Y" }})
+
+      section.sidebar-block
+        nav.navigation.pages-nav
+          ul.plain-list.inline-list
+            li
+              a.nav-link href="/contributing"
+                span.entypo 6
+                | Contribute
