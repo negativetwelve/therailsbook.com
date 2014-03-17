@@ -54,7 +54,8 @@ html
                 | License
 
       section.sidebar-block
-        h5.sidebar-title Chapters Index
+        h5.sidebar-title
+          a href="/chapters" Chapters Index
         ol.navigation.chapters-list
           | {% for chapter in site.chapters %}
           |   {% capture url %}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
