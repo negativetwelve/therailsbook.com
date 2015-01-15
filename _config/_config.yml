@@ -8,5 +8,3 @@ exclude:
   - Gemfile.lock
   - Rakefile
 
-chapters:
-  - Introduction

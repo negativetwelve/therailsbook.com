@@ -57,7 +57,7 @@ html
         h5.sidebar-title
           a href="/chapters" Chapters Index
         ol.navigation.chapters-list
-          | {% for chapter in site.chapters %}
+          | {% for chapter in page.chapters %}
           |   {% capture url %}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
           |   {% capture index_url %}{{ url }}/index.html{% endcapture %}
           li.chapter
@@ -66,3 +66,4 @@ html
                 a.chapter-title href="{{ url }}"
                   | {{ chapter }}
           | {% endfor %}
+
