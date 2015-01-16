@@ -28,6 +28,26 @@ The connection between the models and the views.  It usually takes the model's d
 ### 4. MVC Image
 ![mvc-image](http://railstutorial.org/images/figures/mvc_detailed-full.png)
 
+## Convention over Configuration
+Ruby on Rails follows the CoC paradigm, which means it will make assumptions about what the user is doing rather than
+configuring everything youself.  Rails thus makes a lot of inferences on what you are trying to do and thus it seems
+like Rails works like magic.
+
+## Why Rails?
+
+You can get a webapp up really fast.
+Large community.
+Open source.
+A lot of startups use Rails for these reasons.
+
+## Installation
+
+### Mac OSX
+
+### Linux
+
+### Windows
+
 
 ## Solution
 
