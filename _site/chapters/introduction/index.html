@@ -29,16 +29,20 @@ convention over configuration (CoC) and don’t repeat yourself (DRY).</p>
 
 <h2 id="what-is-model-view-controller-mvc">What is Model-View-Controller (MVC)?</h2>
 <p>MVC is an architechture for software that consists of three components,
-the Model, the View, and the Controller.</p>
+the Model, the View, and the Controller.  It allows an isolation between
+what the users interact with and the logic that goes in the background.</p>
 
-<p>Model: Our interface with our data.  It contains and changes its state.
-Think about this like objects.</p>
+<h3 id="model">1. Model</h3>
+<p>In Rails, models are objects that are used to interact with the data that is stored in the database.  Most of the logic goes into the model.</p>
 
-<p>View:  The part the user sees and interacts with.  Think about this as the
-HTML that is being rendered.</p>
+<h3 id="view">2. View</h3>
+<p>What the user interacts with.  Consists of the HTML, CSS, and javascript to display the data.</p>
 
-<p>Controller:  Takes in commands and interacts with the model to update
-the view.</p>
+<h3 id="controller">3. Controller</h3>
+<p>The connection between the models and the views.  It usually takes the model’s data and populates the views with it.</p>
+
+<h3 id="mvc-image">4. MVC Image</h3>
+<p><img src="http://railstutorial.org/images/figures/mvc_detailed-full.png" alt="mvc-image" /></p>
 
 <h2 id="solution">Solution</h2>
 
