@@ -3,9 +3,26 @@ layout: chapter
 title: Introduction
 chapter: Introduction
 ---
-## Problem
+## What is Rails?
 
-You have created some functionality in CoffeeScript that you wish to use on the client with a web browser and on the server with Node.js.
+Ruby on Rails is a Model-View-Controller (MVC) framework written in Ruby,
+a programming language that is similar to Python in terms of syntax.
+The Rails aspect of Ruby on Rails is the framework that allows us to
+create web applications and APIs.  The framework uses paradigms such as
+convention over configuration (CoC) and don't repeat yourself (DRY).
+
+## What is Model-View-Controller (MVC)?
+MVC is an architechture for software that consists of three components,
+the Model, the View, and the Controller.
+
+Model: Our interface with our data.  It contains and changes its state.
+Think about this like objects.
+
+View:  The part the user sees and interacts with.  Think about this as the
+HTML that is being rendered.
+
+Controller:  Takes in commands and interacts with the model to update
+the view.
 
 ## Solution
 
