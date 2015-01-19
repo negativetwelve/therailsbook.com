@@ -38,3 +38,27 @@ like Rails works like magic.
 You can get a webapp up really fast, there is a large community, and it is open source.
 A lot of startups use Rails for these reasons.
 
+### About this Book
+
+In this book we are going to use Git for version control, Ruby version 2.2.0 and Rails 4.1.0.
+
+## Mac and Linux Installation
+
+### Before
+
+If you have Linux run in your console
+
+{% highlight console %}
+
+sudo apt-get update
+
+{% endhighlight %}
+
+If you have OSX run in your console
+
+{% highlight console %}
+
+brew update
+
+{% endhighlight %}
+
