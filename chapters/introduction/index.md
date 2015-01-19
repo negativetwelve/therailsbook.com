@@ -17,30 +17,35 @@ the Model, the View, and the Controller.  It allows an isolation between
 what the users interact with and the logic that goes in the background.
 
 ### 1. Model
-In Rails, models are objects that are used to interact with the data that is stored in the database.  Most of the logic goes into the model.
+In Rails, models are objects that are used to interact with the data that is
+stored in the database.  Most of the logic goes into the model.
 
 ### 2. View
-What the user interacts with.  Consists of the HTML, CSS, and javascript to display the data.
+What the user interacts with.  Consists of the HTML, CSS, and javascript to
+display the data.
 
 ### 3. Controller
-The connection between the models and the views.  It usually takes the model's data and populates the views with it.
+The connection between the models and the views.  It usually takes the model's
+data and populates the views with it.
 
 ### 4. MVC Image
 ![mvc-image](http://railstutorial.org/images/figures/mvc_detailed-full.png)
 
 ## What is Convention over Configuration (CoC)?
-Ruby on Rails follows the CoC paradigm, which means it will make assumptions about what the user is doing rather than
-configuring everything youself.  Rails makes a lot of inferences on what you are trying to do and thus it seems
+Ruby on Rails follows the CoC paradigm, which means it will make assumptions
+about what the user is doing rather than configuring everything youself.
+Rails makes a lot of inferences on what you are trying to do and thus it seems
 like Rails works like magic.
 
 ## Why Rails?
 
-You can get a webapp up really fast, there is a large community, and it is open source.
-A lot of startups use Rails for these reasons.
+You can get a webapp up really fast, there is a large community, and it is open
+source. A lot of startups use Rails for these reasons.
 
 ### About this Book
 
-In this book we are going to use Git for version control, Ruby version 2.2.0 and Rails 4.1.0.
+In this book we are going to use Git for version control, Ruby version 2.2.0 and
+Rails 4.1.0.
 
 ## Mac and Linux Installation
 
@@ -62,3 +67,46 @@ brew update
 
 {% endhighlight %}
 
+### Installing Git
+
+If you have Linux run in your console
+
+{% highlight console %}
+
+sudo apt-get install git
+
+{% endhighlight %}
+
+If you have OSX run in your console
+
+{% highlight console %}
+
+brew install git
+
+{% endhighlight %}
+
+### Install RVM
+
+If you have Linux run in your console
+
+{% highlight console %}
+
+sudo apt-get install libyaml-dev
+
+{% endhighlight %}
+
+If you have OSX run in your console
+
+{% highlight console %}
+
+brew install libtool libxslt libksba openssl libyaml
+
+{% endhighlight %}
+
+Next, for both Linux and OSX run
+
+{% highlight console %}
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.0
+
+{% endhighlight %}
