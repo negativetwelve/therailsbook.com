@@ -1,5 +1,5 @@
 destination: _deploy
-pygments: true
+highlighter: pygments
 lsi: false
 markdown: redcarpet
 exclude:
