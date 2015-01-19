@@ -45,7 +45,7 @@ source. A lot of startups use Rails for these reasons.
 ### About this Book
 
 In this book we are going to use Git for version control, Ruby version 2.2.0 and
-Rails 4.1.0.
+Rails 4.1.5.
 
 ## Mac and Linux Installation
 
@@ -110,3 +110,45 @@ Next, for both Linux and OSX run
 \curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.0
 
 {% endhighlight %}
+
+to get RVM in order to manage your ruby versions.
+
+Now you should be able to run without error
+
+{% highlight console %}
+
+ruby -v # Print Ruby version.  It should be 2.2.0
+which rbuy #Should have /.rvm/ somewhere in the path
+
+{% endhighlight %}
+
+### Install Rails
+
+Run in your console
+
+{% highlight console %}
+
+gem install rails -v 4.1.5
+rails -v # Should show Rails 4.1.5
+
+{% endhighlight %}
+
+### Create a Rails App
+
+After installing you can now create a Rails App by typing in your console
+
+{% highlight console %}
+
+rails new the-rails-book
+cd the-rails-book
+bundle install
+rails server
+
+{% endhighlight %}
+
+and when you visit [http://localhost:3000]("http:/localhost:3000") you should
+see this
+
+![welcome-image](http://guides.rubyonrails.org/v3.2.13/images/rails_welcome.png)
+
+## Windows Installation

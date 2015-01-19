@@ -61,7 +61,7 @@ source. A lot of startups use Rails for these reasons.</p>
 <h3 id="about-this-book">About this Book</h3>
 
 <p>In this book we are going to use Git for version control, Ruby version 2.2.0 and
-Rails 4.1.0.</p>
+Rails 4.1.5.</p>
 
 <h2 id="mac-and-linux-installation">Mac and Linux Installation</h2>
 
@@ -99,6 +99,35 @@ Rails 4.1.0.</p>
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">\curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.0</span></code></pre></div>
 
+<p>to get RVM in order to manage your ruby versions.</p>
+
+<p>Now you should be able to run without error</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">ruby -v # Print Ruby version.  It should be 2.2.0</span>
+<span class="go">which rbuy #Should have /.rvm/ somewhere in the path</span></code></pre></div>
+
+<h3 id="install-rails">Install Rails</h3>
+
+<p>Run in your console</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">gem install rails -v 4.1.5</span>
+<span class="go">rails -v # Should show Rails 4.1.5</span></code></pre></div>
+
+<h3 id="create-a-rails-app">Create a Rails App</h3>
+
+<p>After installing you can now create a Rails App by typing in your console</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">rails new the-rails-book</span>
+<span class="go">cd the-rails-book</span>
+<span class="go">bundle install</span>
+<span class="go">rails server</span></code></pre></div>
+
+<p>and when you visit <a href="&quot;http:/localhost:3000&quot;">http://localhost:3000</a> you should
+see this</p>
+
+<p><img src="http://guides.rubyonrails.org/v3.2.13/images/rails_welcome.png" alt="welcome-image" /></p>
+
+<h2 id="windows-installation">Windows Installation</h2>
 
         </article>
 
