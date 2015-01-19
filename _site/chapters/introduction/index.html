@@ -129,6 +129,34 @@ see this</p>
 
 <h2 id="windows-installation">Windows Installation</h2>
 
+<p>For Windows we are going to go over how to install Rails through a virtual
+machine because Windows just isn’t as well supported as linux and OSX for rails.</p>
+
+<p>First download and install
+<a href="&quot;https://www.virtualbox.org/wiki/Downloads&quot;">VirtualBox</a> and
+<a href="&quot;https://www.vagrantup.com/downloads.html&quot;">Vagrant</a>.  Then install
+<a href="&quot;http://git-scm.com/book/en/v2/Getting-Started-Installing-Git&quot;">Git</a>.</p>
+
+<h3 id="setting-up-vagrant">Setting up Vagrant</h3>
+
+<p>To setup your VM run the following commands in your console</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">git clone https://github.com/rails-decal/rails-dev-box</span>
+<span class="go">cd rails-dev-box</span>
+<span class="go">vagrant up</span>
+
+<span class="go">vagrant ssh</span>
+
+<span class="gp">vagrant@rails-dev-box:~$</span> <span class="nb">cd</span> /vagrant/
+<span class="gp">vagrant@rails-dev-box:/vagrant$</span> gem install rails -v 4.1.5
+<span class="gp">vagrant@rails-dev-box:/vagrant$</span> rails new week-1-lecture
+<span class="gp">vagrant@rails-dev-box:/vagrant$</span> <span class="nb">cd </span>week-1-lecture
+<span class="gp">vagrant@rails-dev-box:/vagrant$</span> bundle install
+<span class="gp">vagrant@rails-dev-box:/vagrant$</span> rails server</code></pre></div>
+
+<p>Visit [http://localhost:3000] to see your app! It should look like
+<img src="http://guides.rubyonrails.org/v3.2.13/images/rails_welcome.png" alt="welcome-image" /></p>
+
         </article>
 
         <footer class="footer content-block">

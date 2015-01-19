@@ -152,3 +152,35 @@ see this
 ![welcome-image](http://guides.rubyonrails.org/v3.2.13/images/rails_welcome.png)
 
 ## Windows Installation
+
+For Windows we are going to go over how to install Rails through a virtual
+machine because Windows just isn't as well supported as linux and OSX for rails.
+
+First download and install
+[VirtualBox]("https://www.virtualbox.org/wiki/Downloads") and
+[Vagrant]("https://www.vagrantup.com/downloads.html").  Then install
+[Git]("http://git-scm.com/book/en/v2/Getting-Started-Installing-Git").
+
+### Setting up Vagrant
+
+To setup your VM run the following commands in your console
+
+{% highlight console %}
+
+git clone https://github.com/rails-decal/rails-dev-box
+cd rails-dev-box
+vagrant up
+
+vagrant ssh
+
+vagrant@rails-dev-box:~$ cd /vagrant/
+vagrant@rails-dev-box:/vagrant$ gem install rails -v 4.1.5
+vagrant@rails-dev-box:/vagrant$ rails new week-1-lecture
+vagrant@rails-dev-box:/vagrant$ cd week-1-lecture
+vagrant@rails-dev-box:/vagrant$ bundle install
+vagrant@rails-dev-box:/vagrant$ rails server
+
+{% endhighlight %}
+
+Visit [http://localhost:3000] to see your app! It should look like
+![welcome-image](http://guides.rubyonrails.org/v3.2.13/images/rails_welcome.png)
