@@ -29,7 +29,7 @@ The connection between the models and the views.  It usually takes the model's
 data and populates the views with it.
 
 ### 4. MVC Image
-![mvc-image](http://railstutorial.org/images/figures/mvc_detailed-full.png)
+![mvc-image]({{site.url}}/assets/mvc_detailed.png)
 
 ## What is Convention over Configuration (CoC)?
 Ruby on Rails follows the CoC paradigm, which means it will make assumptions
@@ -149,7 +149,7 @@ rails server
 and when you visit [http://localhost:3000]("http:/localhost:3000") you should
 see this
 
-![welcome-image](http://guides.rubyonrails.org/v3.2.13/images/rails_welcome.png)
+![welcome-image]({{site.url}}/assets/rails_welcome.png)
 
 ## Windows Installation
 
@@ -183,4 +183,4 @@ vagrant@rails-dev-box:/vagrant$ rails server
 {% endhighlight %}
 
 Visit [http://localhost:3000] to see your app! It should look like
-![welcome-image](http://guides.rubyonrails.org/v3.2.13/images/rails_welcome.png)
+![welcome-image]({{site.url}}/assets/rails_welcome.png)
