@@ -1,12 +1,15 @@
 ---
 layout: default
 title: Chapters
+chapters:
+- Introduction
+- Routing
 ---
 
 article.content-block
   h5.sidebar-title Chapters
   ol.navigation.chapters-list
-    | {% for chapter in site.chapters %}
+    | {% for chapter in page.chapters %}
     |   {% capture url %}/chapters/{{ chapter | replace: ' ', '_' | downcase }}{% endcapture %}
     |   {% capture index_url %}{{ url }}/index.html{% endcapture %}
     li.chapter
@@ -24,3 +27,4 @@ article.content-block
         |    {% endif %}
         |  {% endfor %}
     | {% endfor %}
+

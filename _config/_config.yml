@@ -1,5 +1,5 @@
 destination: _deploy
-pygments: true
+highlighter: pygments
 lsi: false
 markdown: redcarpet
 exclude:
@@ -8,5 +8,3 @@ exclude:
   - Gemfile.lock
   - Rakefile
 
-chapters:
-  - Introduction
